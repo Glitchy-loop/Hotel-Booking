@@ -12,7 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -38,15 +41,27 @@
           <h4>LUXURY HOTEL & BEST RESORT</h4>
           <hr />
           <h1>ENJOY A LUXURY EXPERIENCE</h1>
-          <button class="btn" onclick="window.location.href='./rooms.html'">ROOMS E SUITES</button>
+          <button class="btn" onclick="window.location.href='./rooms.html'">
+            ROOMS E SUITES
+          </button>
         </div>
         <div class="bookingBar">
           <form name="book">
             <label>CHECK-IN
-            <input type="date" name="checkIn" required/>
+            <input type="date" name="checkIn" id="checkIn" required/>
+            <div id="checkInas">
+                <div class="day">20</div>
+                <div class="month">Apr</div>
+                <div class="icon">></div>
+            </div>
         </label>
         <label>CHECK-OUT
-            <input type="date" name="checkOut" required/>
+            <input type="date" name="checkOut" id="checkOut" required/>
+            <div id="checkOutas">
+                <div class="day">20</div>
+                <div class="month">Apr</div>
+                <div class="icon">></div>
+            </div>
         </label>
         <label>GUESTS
             <input minlength="1" type="number" value="1" name="guests" required/>
