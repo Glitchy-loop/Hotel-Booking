@@ -1,0 +1,255 @@
+html {
+  font-family: 'PT Serif', serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #181818;
+  color: #fff;
+  height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo img {
+  width: 10rem;
+}
+
+header .menu ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menu ul li {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+header .menu ul li a {
+  color: grey;
+  text-decoration: none;
+}
+
+header button {
+  margin-right: 10%;
+  height: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+header button:hover {
+  cursor: pointer;
+}
+
+.content {
+  background-image: url("https://cdn.pixabay.com/photo/2021/10/06/15/05/bedroom-6686061_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.content .overlay {
+  width: 100%;
+  height: 90vh;
+  background: #1f1f1fb3;
+}
+
+.content .overlay .titles {
+  text-align: center;
+  position: absolute;
+  width: 50vw;
+  color: #fff;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content .overlay .titles hr {
+  width: 5rem;
+}
+
+.content .overlay .titles h1 {
+  font-size: 4rem;
+}
+
+.content .overlay .titles .btn {
+  width: 14rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.content .overlay .titles .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #181818;
+}
+
+.content .overlay .bookingBar {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.content .overlay .bookingBar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .overlay .bookingBar form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 10rem;
+  height: 10rem;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.content .overlay .bookingBar form input {
+  height: 100%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.content .overlay .bookingBar form input[type="submit"] {
+  height: 12rem;
+  width: 12rem;
+  font-size: .8rem;
+  background-color: #181818;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+}
+
+.content .overlay .bookingBar form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.current {
+  text-decoration: underline !important;
+  color: #fff !important;
+  text-decoration-thickness: .125em;
+  text-underline-offset: .7rem;
+}
+
+section {
+  background-image: url("https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 100%;
+}
+
+section .overlay {
+  height: 20vh;
+  width: 100%;
+  background: #1f1f1fb3;
+}
+
+section .overlay h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 100;
+  left: 42%;
+  top: 12rem;
+}
+
+.rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rooms .room {
+  padding-top: 2rem;
+  width: 31%;
+  padding-left: 1rem;
+}
+
+.rooms .room div {
+  padding-top: .5rem;
+}
+
+.rooms .room img {
+  width: 100%;
+}
+
+.rooms .room .guests {
+  color: lightgrey;
+}
+
+.rooms .room .title {
+  font-size: 2rem;
+}
+
+.rooms .room .description {
+  color: grey;
+}
+
+.rooms .room .bookNow {
+  background: transparent;
+  width: 12rem;
+  padding: .5rem;
+  margin-top: .5rem;
+}
+
+.rooms .room .bookNow:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

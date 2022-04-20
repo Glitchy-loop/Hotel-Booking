@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="HOTEL BOOKING" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="/client/home.html">Home</a></li>
+          <li><a href="/client/rooms.html">Rooms</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <button class="bookNowBtn">BOOK NOW</button>
+    </header>
+    <div class="content">
+      <div class="overlay">
+        <div class="titles">
+          <h4>LUXURY HOTEL & BEST RESORT</h4>
+          <hr />
+          <h1>ENJOY A LUXURY EXPERIENCE</h1>
+          <button class="btn" onclick="window.location.href='./rooms.html'">ROOMS E SUITES</button>
+        </div>
+        <div class="bookingBar">
+          <form name="book">
+            <label>CHECK-IN
+            <input type="date" name="checkIn" required/>
+        </label>
+        <label>CHECK-OUT
+            <input type="date" name="checkOut" required/>
+        </label>
+        <label>GUESTS
+            <input minlength="1" type="number" value="1" name="guests" required/>
+        </label>
+            <input type="submit" value="CHECK AVAILABILITY"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="./js/home.js"></script>
+  </body>
+</html>
