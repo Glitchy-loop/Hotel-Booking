@@ -37,3 +37,15 @@ finishDate.addEventListener('change', e => {
   let checkInDay = document.querySelector('#checkOutas .day')
   checkInDay.innerHTML = day
 })
+
+const form = document.forms.book
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+
+  const checkIn = e.target.elements.checkIn.value.trim()
+  const checkOut = e.target.elements.checkOut.value.trim()
+  const guests = e.target.elements.guests.value.trim()
+
+  console.log(checkIn, checkOut, guests)
+})

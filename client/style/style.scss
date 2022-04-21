@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     background-color: #181818;
     color:#fff;
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     margin: 0 auto;
     align-items: center;
@@ -140,8 +140,9 @@ header {
 
                 input[type="number"] {
                     width: 2rem;
-                    margin:0 auto;
+                    margin:3.5rem auto;
                     font-size: 2rem;
+                    margin-top:2rem;
                 }
 
                 input[type="submit"] {
@@ -166,15 +167,24 @@ form div {
     pointer-events: none;
     position:relative;
     bottom:1.3rem;
-
     display:flex;
     margin-left:1rem;
+
+    div {
+        display:flex;
+        flex-direction: column;
+        margin-left:.5rem;
+        margin-top:.2rem;
+    }
+
     .day {
         font-size:2rem;
     }
     .icon {
         transform: rotate(90deg);
         font-size:1.6rem;
+        margin-top:.5rem;
+        
     }
 }
 
@@ -190,11 +200,11 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-    height: 20vh;
+    min-height: 18rem;
     width: 100%;
 
     .overlay {
-        height: 20vh;
+        height: 18rem;
         width: 100%;
         background: #1f1f1fb3;
 
@@ -205,7 +215,7 @@ section {
             font-weight: 100;
 
             left:42%;
-            top:12rem;
+            top:10rem;
         }
     }
 }
