@@ -277,20 +277,24 @@ section .overlay h2 {
 }
 
 .rooms .room .guests {
-  color: lightgrey;
+  color: #979797;
+  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .rooms .room .title {
   font-size: 2rem;
+  padding: 0 2rem;
 }
 
 .rooms .room .description {
   color: grey;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .rooms .room .bookNow {
@@ -298,6 +302,7 @@ section .overlay h2 {
   width: 12rem;
   padding: .5rem;
   margin-top: .5rem;
+  margin: 1rem 2rem 0 2rem;
 }
 
 .rooms .room .bookNow:hover {

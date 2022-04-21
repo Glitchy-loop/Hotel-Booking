@@ -227,7 +227,6 @@ section {
     flex-wrap: wrap;
 
     .room {
-
         padding-top:2rem;
         width: 31%;
         padding-left:1rem;
@@ -240,21 +239,25 @@ section {
             width: 100%;
         }
         .guests {
-            color:lightgrey;
+            color:#979797;
+            padding:0 2rem;
             display:flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
         .title {
             font-size: 2rem;
+            padding:0 2rem;
         }
         .description {
             color:grey;
+            padding:1rem 2rem 0 2rem;
         }
         .bookNow {
             background: transparent;
             width: 12rem;
             padding:.5rem;
             margin-top:.5rem;
+            margin:1rem 2rem 0 2rem;
 
             &:hover {
                 cursor: pointer;
