@@ -48,4 +48,6 @@ form.addEventListener('submit', e => {
   const guests = e.target.elements.guests.value.trim()
 
   console.log(checkIn, checkOut, guests)
+
+  location.replace(`rooms.html?guests=${guests}`)
 })

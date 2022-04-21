@@ -278,6 +278,11 @@ section .overlay h2 {
 
 .rooms .room .guests {
   color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .rooms .room .title {
